@@ -50,11 +50,12 @@ metadata, history files, and editor state are filtered out (see `EXCLUDES` in
 
 ## Notes
 
-- The zsh setup has two half-installs: the live one is `.config/zsh/.zshrc` with
-  oh-my-zsh in `.config/zsh/ohmyzsh`, while `~/.zshrc` + `~/.oh-my-zsh` are an
-  unused leftover. Also, `~/.zshenv` sources `$ZDOTDIR/.zshenv`, which does not
-  exist — worth fixing or dropping when rebuilding. Both rc files are backed up
-  here so nothing is lost either way.
+- zsh loads in three steps: `~/.zshenv` sets `ZDOTDIR` and hands off to
+  `$ZDOTDIR/.zshenv` (XDG paths and other always-on environment), then
+  `$ZDOTDIR/.zshrc` loads oh-my-zsh from `.config/zsh/ohmyzsh`.
+- `~/.zshrc` and `~/.oh-my-zsh` are an unused leftover from an earlier install —
+  the live rc file is `.config/zsh/.zshrc`. Both are backed up so nothing is
+  lost, but only the `ZDOTDIR` one is read.
 - Not tracked on purpose: SSH keys, GPG keys, browser profiles, Discord clients,
   JetBrains IDE state, and anything else holding credentials or session data.
   Restore those by hand.

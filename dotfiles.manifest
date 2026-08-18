@@ -10,6 +10,7 @@
 # --- shells ---
 .zshenv
 .zshrc
+.config/zsh/.zshenv
 .config/zsh/.zshrc
 .bashrc
 .bash_profile
