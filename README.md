@@ -51,7 +51,7 @@ metadata, history files, and editor state are filtered out (see `EXCLUDES` in
 ## Notes
 
 - zsh loads in three steps: `~/.zshenv` sets `ZDOTDIR` and hands off to
-  `$ZDOTDIR/.zshenv` (XDG paths and other always-on environment), then
+  `$ZDOTDIR/.zshenv` (XDG base directories and PATH), then
   `$ZDOTDIR/.zshrc` loads oh-my-zsh from `.config/zsh/ohmyzsh`.
 - `~/.zshrc` and `~/.oh-my-zsh` are an unused leftover from an earlier install —
   the live rc file is `.config/zsh/.zshrc`. Both are backed up so nothing is

@@ -8,3 +8,14 @@ export XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"
 export XDG_STATE_HOME="${XDG_STATE_HOME:-$HOME/.local/state}"
 
 export ZDOTDIR="${ZDOTDIR:-$XDG_CONFIG_HOME/zsh}"
+
+# PATH. `typeset -U` keeps it deduplicated, and the (N-/) glob qualifier drops
+# entries that do not exist on this machine, so the same file works everywhere.
+typeset -U path PATH
+path=(
+    "$HOME/.local/bin"(N-/)
+    "$HOME/.cargo/bin"(N-/)
+    "$XDG_DATA_HOME/JetBrains/Toolbox/scripts"(N-/)
+    $path
+)
+export PATH
