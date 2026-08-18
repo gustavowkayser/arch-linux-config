@@ -1,0 +1,17 @@
+{
+    "files.autoSave": "afterDelay",
+    "claudeCode.preferredLocation": "panel",
+    "workbench.iconTheme": "mizu",
+    "workbench.colorTheme": "Caelestia",
+    "claudeCode.useTerminal": true,
+    "workbench.statusBar.visible": false,
+    "chat.fontFamily": "'JetBrainsMono Nerd Font', 'GeistMono Nerd Font'",
+    "editor.fontFamily": "'FiraCode'",
+    "window.menuBarVisibility": "compact",
+    "window.commandCenter": false,
+    "workbench.browser.showInTitleBar": true,
+    "workbench.sideBar.location": "right",
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "window.zoomLevel": 1
+}

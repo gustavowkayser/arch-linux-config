@@ -1,0 +1,66 @@
+# Dotfiles manifest — paths are relative to $HOME.
+#
+# Used by:
+#   scripts/sync-dotfiles.sh   copies $HOME/<path>  ->  dotfiles/<path>
+#   scripts/setup-dotfiles.sh  links dotfiles/<path> -> $HOME/<path>
+#
+# Lines starting with '#' are comments. Directories are copied recursively,
+# minus the junk filtered out in scripts/sync-dotfiles.sh (EXCLUDES).
+
+# --- shells ---
+.zshenv
+.zshrc
+.config/zsh/.zshrc
+.bashrc
+.bash_profile
+.bash_logout
+.profile
+.config/fish
+
+# --- git ---
+.gitconfig
+
+# --- wayland / hyprland desktop ---
+.config/hypr
+.config/caelestia
+.config/uwsm
+.config/fuzzel
+.config/cava
+
+# --- terminals ---
+.config/kitty
+.config/foot
+.config/starship.toml
+
+# --- editors ---
+.config/nvim
+.config/zed
+.config/micro
+.config/Code/User
+.config/Code - OSS/User
+.config/VSCodium/User
+
+# --- tui tools ---
+.config/btop
+.config/htop
+.config/nvtop
+.config/fastfetch
+
+# --- gtk / qt / theming ---
+.gtkrc-2.0
+.Xresources
+.config/gtk-3.0
+.config/gtk-4.0
+.config/kdeglobals
+.config/qtengine
+.config/xfce4
+.config/Thunar
+.config/arkrc
+
+# --- misc ---
+.config/mimeapps.list
+.config/user-dirs.dirs
+.config/user-dirs.locale
+.config/code-flags.conf
+.config/codium-flags.conf
+.config/spicetify

@@ -1,0 +1,11 @@
+caelestia-cli
+caelestia-firefox-theme
+caelestia-shell
+darkly-bin
+equibop-bin
+hyprmod
+jetbrains-toolbox
+qtengine
+todoist-appimage
+vscodium-bin
+vscodium-bin-marketplace

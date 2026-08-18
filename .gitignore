@@ -1,0 +1,12 @@
+# Machine-local state that should never be tracked, even if a manifest entry
+# happens to pull in the containing directory.
+*.bak
+*.bak.*
+*.log
+*.tmp
+.zcompdump*
+*.zwc
+.zsh_history
+.bash_history
+node_modules/
+__pycache__/
